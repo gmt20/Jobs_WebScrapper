@@ -129,7 +129,7 @@ msg['Subject'] = "Daily Job Update from Indeed"
 body = "Please find attched the latest top 20 jobs posted on Indeed.com"
 msg.attach(MIMEText(body, 'plain')) 
 filename = "jobs.xls"
-attachment = open("D:\\", "rb") 
+attachment = open("D:\jobs.xls", "rb") 
 p = MIMEBase('application', 'octet-stream') 
 p.set_payload((attachment).read()) 
 encoders.encode_base64(p) 
